@@ -83,6 +83,7 @@ public class Main {
 
     System.out.println(mySecondProject.getIdProject());
     System.out.println(mySecondProject.getName());
+    System.out.println(mySecondProject.verifyResources());
         
 
     Car c1 = new Car("Ranger","Ford" );
@@ -113,6 +114,8 @@ public class Main {
         Cliente cl2 = new Cliente("Felipe");
         
         Cliente cl3= new Cliente("Carol", "Souza");
+
+
 
 
     }

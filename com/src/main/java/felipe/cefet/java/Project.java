@@ -23,6 +23,23 @@ public class Project {
         return this.isActive;
     }
 
+    public void setDescription(String description){
+        this.description=description;
+    }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public void SetResponsible(Person responsible){
+        this.responsible=responsible;
+    }
+
+    public Person getResponsible(){
+        return responsible;
+    }
+
+
     public void setIdProject(int idProject){
         if(idProject>0)
             this.idProject=idProject;
@@ -33,9 +50,6 @@ public class Project {
     public void setName(String name){
         this.name=name;
     }
-
-    
-
 
 
 
@@ -50,7 +64,7 @@ public class Project {
             return "Money added";    
     }
 
-    private boolean verifyResources(){
+    public boolean verifyResources(){
         if(this.isActive && this.valueEmplyed<500)
             return true;
         else
